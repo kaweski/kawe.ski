@@ -2,7 +2,7 @@
 
 .signature {
     background-color: $green;
-    border-radius: 0 16px 16px 0;
+    border-radius: 0 $s-4 $s-4 0;
     border: none;
-    padding: $s-4;
+    padding: $s-4 $s-5;
 }

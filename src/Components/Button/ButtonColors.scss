@@ -2,10 +2,7 @@
 
 .button {
     &:not(.button-dark) {
-        &:before {
-            border: 1px solid $black;
-            background-color: $white;
-        }
+        &::before { border: 1px solid $black; }
     }
 
     &-white {
@@ -53,21 +50,10 @@
         &:hover::after { border-color: $black; }
     }
 
-    &-dark {
-        &::after {
-            border: 1px solid $black;
-        }
-        &::before {
-            background-color: $black;
-            border: 1px solid $white;
-        }
-    }
-}
+    &::before { background-color: transparent; }
 
-.go-link {
-    &::after {
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-image: url('../../images/go-link.png');
+    &-dark {
+        &::after { border: 1px solid $black; }
+        &::before { border: 1px solid $white; }
     }
 }

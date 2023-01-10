@@ -10,7 +10,7 @@ class SidebarLeft extends React.Component {
                 <div className='pb-4'>
                     <Post />
                 </div>
-                <Button url='https://twitter.com/naweskil' content='Spotify' classes='button-blue button-dark' />
+                <Button url='https://twitter.com/naweskil' content='Spotify' icon={false} classes='button-blue button-dark' />
                 <hr/>
                 <div className='box p-4'>
                     <Post />
@@ -27,11 +27,11 @@ class SidebarRight extends React.Component {
                 <div className='pb-4'>
                     <Post />
                 </div>
-                <Button url='https://twitter.com/naweskil' content='Medium 1' classes='button-green button-dark' />
+                <Button url='https://twitter.com/naweskil' content='Medium 1' icon={false} classes='button-green button-dark' />
                 <hr/>
                 <Post />
                 <div className='abuble abuble-big white text-right py-4'>nome do artigo em duas linhas</div>
-                <Button url='https://twitter.com/naweskil' content='Medium 2' classes='button-pink button-dark' />
+                <Button url='https://twitter.com/naweskil' content='Medium 2' icon={false} classes='button-pink button-dark' />
             </div>
         )
     }

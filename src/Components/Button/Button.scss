@@ -12,16 +12,13 @@
     letter-spacing: -2px;
     text-shadow: 1px 1px 0 $white;
 
-    span {
+    .content {
         z-index: 1;
         position: relative;
-        text-align: center;
-        width: 100%;
-        display: inline-block;
     }
 
     &:hover {
-        padding: 18px 14px 14px 18px;
+        padding: 19px 13px 13px 19px;
         &:after {
             bottom: -$s-1;
             right: -$s-1;
@@ -56,10 +53,6 @@
         height: $s-5;
         width: $s-5;
 
-        .text {
-            display: none;
-        }
-
         &::after {
             height: $s-5;
             width: $s-5;
@@ -69,5 +62,20 @@
             height: $s-5;
             width: $s-5;
         }
+    }
+
+    &-icon {
+        padding: 0px;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+
+        .content {
+            height: auto;
+            width: auto;
+            img { display: inline-block; }
+        }
+
+        &:hover { padding: 6px 0 0 6px; }
     }
 }
