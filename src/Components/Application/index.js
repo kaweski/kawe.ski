@@ -9,11 +9,11 @@ class Application extends React.Component {
     render() {
         return (
             <div className='content p-10'>
-                <div className="flex flex-row">
+                <div className="grid lg:grid-cols-4 gap-10">
                     <div className='flex flex-col'>
                         <SidebarLeft/>
                     </div>
-                    <div className='flex flex-col grow'>
+                    <div className='flex flex-col lg:col-span-2'>
                         <Main/>
                     </div>
                     <div className='flex flex-col'>

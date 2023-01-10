@@ -7,7 +7,7 @@ import { Social } from '../Social';
 class Main extends React.Component {
     render() {
         return (
-            <main className='px-10'>
+            <main>
                 <header>
                     <Link url='https://kawe.ski'/>
                     <hr/>

@@ -8,8 +8,8 @@ class Posts extends React.Component {
     render() {
         return (
             <div className='posts'>
-                <div className='flex flex-row pt-10'>
-                    <div className='flex flex-row grow relative'>
+                <div className='grid grid-flow-col gap-10 pt-10'>
+                    <div className='flex flex-row relative col-span-2'>
                         <img className="photo object-cover" src={Placeholder}/>
                         <div className='right-0 bottom-0 p-4 space-x-2 flex flex-row items-start absolute'>
                             <Tag text='#tag'/>
@@ -35,7 +35,7 @@ class Posts extends React.Component {
                             content='Etiam tempus lacus in urna maximus tincidunt.'
                         />
                     </div>
-                    <div className='flex flex-col w-96'>
+                    <div className='flex flex-col'>
                         <div className='box p-4'>
                             <Post
                                 button={false}

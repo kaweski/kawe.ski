@@ -7,7 +7,7 @@ import Placeholder from '../../images/photo.png';
 class SidebarLeft extends React.Component {
     render() {
         return (
-            <div className='w-96 pr-10 sidebar sidebar-left'>
+            <div className='sidebar sidebar-left pr-10'>
                 <div className='pb-4'>
                     <Post
                         button={false}
@@ -37,7 +37,7 @@ class SidebarLeft extends React.Component {
 class SidebarRight extends React.Component {
     render() {
         return (
-            <div className='w-96 pl-10 sidebar sidebar-right'>
+            <div className='sidebar sidebar-right pl-10'>
                 <div className='pb-4'>
                     <Post
                         button={false}

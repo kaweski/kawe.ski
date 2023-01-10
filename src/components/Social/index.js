@@ -27,7 +27,7 @@ class Social extends React.Component {
                                     </p>
                                 </div>
                             </div>
-                            <div className='social-buttons flex flex-row items-center justify-start space-x-8 p-10'>
+                            <div className='social-buttons flex flex-row items-center justify-between space-x-8 p-10'>
                                 <Button url='https://twitter.com/naweskil' icon={false} classes='button-blue' content='Twitch' />
                                 <Button url='https://twitter.com/naweskil' icon={false} classes='button-pink' content='YouTube' />
                                 <Button url='https://twitter.com/naweskil' icon={false} classes='button-yellow' content='EA Games' />
