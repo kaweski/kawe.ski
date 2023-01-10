@@ -3,6 +3,7 @@
 .box {
     border-radius: $s-3;
     border: 1px solid $gray;
+    overflow: hidden;
 }
 
 hr {
@@ -12,4 +13,14 @@ hr {
     margin: $s-4 0;
     box-shadow: none;
     border: none;
+}
+
+::-moz-selection { /* Code for Firefox */
+    color: $black;
+    background: $white;
+}
+
+::selection {
+    color: $black;
+    background: $white;
 }

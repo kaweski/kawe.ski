@@ -4,7 +4,7 @@ import './Link.scss';
 class Link extends React.Component {
     render() {
         return (
-            <a href={this.props.url} className="title">{this.props.url}</a>
+            <a href={this.props.url} className='title'>{this.props.url}</a>
         );
     }
 }
