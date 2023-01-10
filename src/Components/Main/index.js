@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
 import "./Main.scss";
-import Button from '../Button';
 import Link from '../Link';
 import { About } from "../About";
+import { Social } from '../Social';
 
 class Main extends React.Component {
     render() {
@@ -13,6 +13,7 @@ class Main extends React.Component {
                     <hr/>
                 </header>
                 <About/>
+                <Social/>
             </main>
         )
     }

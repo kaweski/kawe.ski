@@ -3,6 +3,7 @@ import './App.scss';
 import { SidebarLeft, SidebarRight } from "../Sidebar";
 import { Main } from '../Main';
 import { Posts } from '../Posts';
+import { Footer } from '../Footer';
 
 class Application extends React.Component {
     render() {
@@ -20,6 +21,7 @@ class Application extends React.Component {
                     </div>
                 </div>
                 <Posts />
+                <Footer/>
             </div>
         );
     }
