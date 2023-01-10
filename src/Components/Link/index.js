@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './Link.scss';
 
 class Link extends React.Component {
-
     render() {
-        url = this.props.url || '';
-        return <a href={url} className="title">{url}</a>
+        return (
+            <a href={this.props.url} className="title">{this.props.url}</a>
+        );
     }
 }
 
-export { Link }
+export default Link;

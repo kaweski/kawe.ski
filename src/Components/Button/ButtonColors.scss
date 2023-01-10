@@ -1,0 +1,41 @@
+@import '../../css/Basic/Basic';
+
+.button {
+    &-pink {
+        &::after {
+            background-color: $pink;
+            border-color: $white;
+        }
+        &:hover::after { border-color: $black; }
+    }
+    &-green {
+        &::after {
+            background-color: $green;
+            border-color: $white;
+        }
+        &:hover::after { border-color: $black; }
+    }
+    &-gray {
+        .text {
+            color: $white;
+        }
+        &::after {
+            background-color: $gray;
+            border-color: $white;
+        }
+    }
+    &-blue {
+        &::after {
+            background-color: $blue;
+            border-color: $white;
+        }
+        &:hover::after { border-color: $black; }
+    }
+    &-yellow {
+        &::after {
+            background-color: $yellow;
+            border-color: $white;
+        }
+        &:hover::after { border-color: $black; }
+    }
+}
