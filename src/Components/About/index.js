@@ -12,14 +12,14 @@ class About extends React.Component {
                 <div className='grid grid-cols-2 gap-0'>
                     <div className='flex flex-row relative'>
                         <img className="photo object-cover" src={Photo}/>
-                        <div className='tags p-4 space-x-2 flex flex-row items-start absolute'>
+                        <div className='top-0 left-0 p-4 space-x-2 flex flex-row items-start absolute'>
                             <Tag text='#tag'/>
                             <Tag text='#tag'/>
                             <Tag text='#tag'/>
                         </div>
                     </div>
                     <div className='flex flex-col'>
-                        <div className='flex about-me'><Category text='About me'/></div>
+                        <div className='flex'><Category text='About me'/></div>
                         <div className='flex flex-col p-6'>
                             <h1 className='white title pb-4'>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis libero ac ipsum bibendum, ac rutrum neque suscipit. Nunc et rhoncus neque.

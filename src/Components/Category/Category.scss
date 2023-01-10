@@ -2,10 +2,8 @@
 
 .category {
     background: $white;
-    border: 1px solid $black;
     border-radius: 0 100px 100px 0;
     padding: $s-2 $s-4;
     background-color: $pink;
-    text-transform: lowercase;
-    text-shadow: 1px 1px 0 $white;
+    box-shadow: 2px 2px 0 $white;
 }
