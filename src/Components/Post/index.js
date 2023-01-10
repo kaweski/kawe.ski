@@ -26,11 +26,13 @@ class Post extends React.Component {
         }
 
         return (
-            <article>
+            <article className='flex flex-col'>
                 <img src={props.image} className='photo object-cover'/>
-                <h2 className={`text ${props.color} mt-4`}>{props.title}</h2>
-                {hasButton(props)}
-                {hasContent(props)}
+                <div className='flex flex-col'>
+                    <h2 className={`text ${props.color} mt-4`}>{props.title}</h2>
+                    {hasButton(props)}
+                    {hasContent(props)}
+                </div>
             </article>
         )
     }

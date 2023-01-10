@@ -12,9 +12,9 @@ class Social extends React.Component {
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis libero ac ipsum bibendum, ac rutrum neque suscipit. Nunc et rhoncus neque.
                 </p>
 
-                <div className='flex flex-row mt-10'>
-                    <div className='flex flex-row relative box'>
-                        <div className='social flex flex-col'>
+                <div className='grid lg:grid-cols-4 lg:gap-10 mt-10'>
+                    <div className='flex flex-row box lg:col-span-3'>
+                        <div className='social flex flex-col col-span-2'>
                             <div className='flex flex-row grow space-x-8 p-8'>
                                 <div>
                                     <img src={Placeholder} className='photo' />
@@ -34,7 +34,7 @@ class Social extends React.Component {
                             </div>
                         </div>
                     </div>
-                    <div className='flex flex-col pl-10 w-96'>
+                    <div className='flex flex-col'>
                         <p className='abuble abuble-small white text-right mb-4'>
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis libero ac ipsum bibendum, ac rutrum neque suscipit. Nunc et rhoncus neque.
                         </p>

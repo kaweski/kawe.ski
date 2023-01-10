@@ -9,7 +9,7 @@ class About extends React.Component {
     render() {
         return (
             <div className='box'>
-                <div className='grid grid-cols-2 gap-0'>
+                <div className='grid lg:grid-cols-2 gap-0'>
                     <div className='flex flex-row relative'>
                         <img className="photo object-cover" src={Photo}/>
                         <div className='top-0 left-0 p-4 space-x-2 flex flex-row items-start absolute'>
