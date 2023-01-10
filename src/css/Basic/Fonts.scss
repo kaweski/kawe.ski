@@ -1,0 +1,13 @@
+@font-face {
+    font-family: "Apple ][";
+    src: url("../../fonts/Apple\ ][.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Redacted Script Regular";
+    src: local("RedactedScript-Regular"),
+        url("../../fonts/RedactedScript-Regular.ttf") format("truetype");
+}
+
+$abuble: 'Redacted Script Regular';
+$coding: 'Apple';

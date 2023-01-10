@@ -1,0 +1,10 @@
+a {
+    &:not(.button) {
+        color: $green;
+        &:hover {
+            text-decoration: none;
+            cursor: pointer;
+            border-bottom: 2px solid $gray;
+        }
+    }
+}

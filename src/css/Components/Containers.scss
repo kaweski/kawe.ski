@@ -1,0 +1,15 @@
+.content {
+    padding: $s-6;
+}
+
+.box {
+    border-radius: $s-3;
+    border: 1px solid $gray;
+}
+
+    .box-footer {
+        background-color: $green;
+        padding: $s-4;
+        border-radius: 0 $s-3 $s-3 0;
+    }
+

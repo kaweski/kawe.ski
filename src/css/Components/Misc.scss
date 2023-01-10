@@ -1,0 +1,22 @@
+.avatar {
+    background-image: url('../../images/photo.png');
+    background-size: cover;
+    border-radius: 100%;
+    display: flex;
+    height: $s-9;
+    width: $s-9;
+}
+
+.photo {
+    height: 100%;
+    width: 100%;
+}
+
+hr {
+    height: 1px;
+    background-color: $gray;
+    width: 100%;
+    margin: $s-4 0;
+    box-shadow: none;
+    border: none;
+}
