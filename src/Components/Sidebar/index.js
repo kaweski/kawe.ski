@@ -1,26 +1,21 @@
 import React, { Component } from 'react';
 import "./Sidebar.scss";
 import Button from '../Button';
+import { Post } from "../Post";
 
 class SidebarLeft extends React.Component {
     render() {
         return (
-            <sidebar className='w-64 sidebar sidebar-left'>
-                <div className='bg-white'>
-                    <Button url='https://twitter.com/naweskil' icon={true} classes='button-white' />
-                    <Button url='https://twitter.com/naweskil' icon={true} classes='button-pink' />
-                    <Button url='https://twitter.com/naweskil' icon={true} classes='button-blue' />
-                    <Button url='https://twitter.com/naweskil' icon={true} classes='button-green' />
-                    <Button url='https://twitter.com/naweskil' icon={true} classes='button-gray' />
-                    <Button url='https://twitter.com/naweskil' icon={true} classes='button-yellow' />
+            <div className='w-96 pr-10 sidebar sidebar-left'>
+                <div className='pb-4'>
+                    <Post />
                 </div>
-                <Button url='https://twitter.com/naweskil' icon={true} classes='button-white button-dark' />
-                <Button url='https://twitter.com/naweskil' icon={true} classes='button-pink button-dark' />
-                <Button url='https://twitter.com/naweskil' icon={true} classes='button-blue button-dark' />
-                <Button url='https://twitter.com/naweskil' icon={true} classes='button-green button-dark' />
-                <Button url='https://twitter.com/naweskil' icon={true} classes='button-gray button-dark' />
-                <Button url='https://twitter.com/naweskil' icon={true} classes='button-yellow button-dark' />
-            </sidebar>
+                <Button url='https://twitter.com/naweskil' content='Spotify' classes='button-blue button-dark' />
+                <hr/>
+                <div className='box p-4'>
+                    <Post />
+                </div>
+            </div>
         )
     }
 }
@@ -28,22 +23,16 @@ class SidebarLeft extends React.Component {
 class SidebarRight extends React.Component {
     render() {
         return (
-            <sidebar className='w-64 sidebar sidebar-right'>
-                <div className='bg-white pad2'>
-                    <Button url='https://twitter.com/naweskil' content='Twitter' classes='button-white' />
-                    <Button url='https://twitter.com/naweskil' content='Twitter' classes='button-pink' />
-                    <Button url='https://twitter.com/naweskil' content='Twitter' classes='button-blue' />
-                    <Button url='https://twitter.com/naweskil' content='Twitter' classes='button-green' />
-                    <Button url='https://twitter.com/naweskil' content='Twitter' classes='button-gray' />
-                    <Button url='https://twitter.com/naweskil' content='Twitter' classes='button-yellow' />
+            <div className='w-96 pl-10 sidebar sidebar-right'>
+                <div className='pb-4'>
+                    <Post />
                 </div>
-                <Button url='https://twitter.com/naweskil' content='Twitter' classes='button-white button-dark' />
-                <Button url='https://twitter.com/naweskil' content='Twitter' classes='button-pink button-dark' />
-                <Button url='https://twitter.com/naweskil' content='Twitter' classes='button-blue button-dark' />
-                <Button url='https://twitter.com/naweskil' content='Twitter' classes='button-green button-dark' />
-                <Button url='https://twitter.com/naweskil' content='Twitter' classes='button-gray button-dark' />
-                <Button url='https://twitter.com/naweskil' content='Twitter' classes='button-yellow button-dark' />
-            </sidebar>
+                <Button url='https://twitter.com/naweskil' content='Medium 1' classes='button-green button-dark' />
+                <hr/>
+                <Post />
+                <div className='abuble abuble-big white text-right py-4'>nome do artigo em duas linhas</div>
+                <Button url='https://twitter.com/naweskil' content='Medium 2' classes='button-pink button-dark' />
+            </div>
         )
     }
 }
