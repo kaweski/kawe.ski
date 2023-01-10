@@ -7,8 +7,9 @@ class Post extends React.Component {
         return (
             <article>
                 <h2 className='title pink'>Article</h2>
-                {this.props.button ?
-                    <Button url='#' classes='go-link' icon={true} /> : ''
+                {this.props.button
+                    ? <Button url='https://twitter.com/naweskil' icon={true} classes='button-pink button-dark go-link' />
+                    : ''
                 }
                 
             </article>

@@ -7,7 +7,7 @@ class Button extends React.Component {
         var classes = 'button ' + (this.props.icon ? 'button-icon ' : '') + (this.props.classes ? this.props.classes : '');
 
         return (
-            <a href={this.props.url} target='_blank' className={classes}><span className="text">{this.props.content}</span></a>
+            <a href={this.props.url} target='_blank' className={classes}><span>{this.props.content}</span></a>
         );
     }
 }

@@ -1,12 +1,12 @@
 @font-face {
     font-family: "Apple ][";
-    src: url("../../fonts/Apple\ ][.ttf") format("truetype");
+    src: url("../fonts/Apple\ ][.ttf") format("truetype");
 }
 
 @font-face {
     font-family: "Redacted Script Regular";
     src: local("RedactedScript-Regular"),
-        url("../../fonts/RedactedScript-Regular.ttf") format("truetype");
+        url("../fonts/RedactedScript-Regular.ttf") format("truetype");
 }
 
 $abuble: 'Redacted Script Regular';
@@ -17,12 +17,12 @@ $coding: 'Apple';
 
     &-big {
         font-size: 47px;
-        line-height: 47px;
+        line-height: 46px;
 
         &:hover {
             font-family: $coding;
             font-size: 20px;
-            line-height: 47px;
+            line-height: 46px;
         }
     }
 
@@ -36,4 +36,18 @@ $coding: 'Apple';
             line-height: 16px;
         }
     }
+}
+
+.text {
+    font-family: $coding;
+    font-size: 9px;
+    line-height: 16px;
+    letter-spacing: -1px;
+}
+
+.title {
+    font-family: $coding;
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: -2px;
 }

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import "./Main.scss";
 import Button from '../Button';
 import Link from '../Link';
+import { About } from "../About";
 
 class Main extends React.Component {
     render() {
@@ -11,6 +12,7 @@ class Main extends React.Component {
                     <Link url='https://kawe.ski'/>
                     <hr/>
                 </header>
+                <About/>
             </main>
         )
     }

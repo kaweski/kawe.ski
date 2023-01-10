@@ -1,26 +1,33 @@
-@import '../../css/Basic/Basic';
+@import '../../css/Basic';
 
 .button {
+    &:not(.button-dark) {
+        &:before {
+            border: 1px solid $black;
+            background-color: $white;
+        }
+    }
+
     &-white {
         &::after {
             background-color: $white;
-            border-color: $black;
+            border: 1px solid $black;
         }
-        &:hover::after { border-color: $black; }
+        &:hover::after { border: 1px solid $black; }
     }
     &-pink {
         &::after {
             background-color: $pink;
-            border-color: $white;
+            border: 1px solid $white;
         }
-        &:hover::after { border-color: $black; }
+        &:hover::after { border: 1px solid $black; }
     }
     &-green {
         &::after {
             background-color: $green;
-            border-color: $white;
+            border: 1px solid $white;
         }
-        &:hover::after { border-color: $black; }
+        &:hover::after { border: 1px solid $black; }
     }
     &-gray {
         .text {
@@ -28,34 +35,39 @@
         }
         &::after {
             background-color: $gray;
-            border-color: $white;
+            border: 1px solid $white;
         }
     }
     &-blue {
         &::after {
             background-color: $blue;
-            border-color: $white;
+            border: 1px solid $white;
         }
         &:hover::after { border-color: $black; }
     }
     &-yellow {
         &::after {
             background-color: $yellow;
-            border-color: $white;
+            border: 1px solid $white;
         }
         &:hover::after { border-color: $black; }
     }
 
     &-dark {
+        &::after {
+            border: 1px solid $black;
+        }
         &::before {
             background-color: $black;
-            border-color: $white;
+            border: 1px solid $white;
         }
     }
 }
 
-.go-link:after {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-image: url('../../images/go-link.png');
+.go-link {
+    &::after {
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-image: url('../../images/go-link.png');
+    }
 }

@@ -7,7 +7,7 @@ import { Post } from '../Post';
 class Application extends React.Component {
     render() {
         return (
-            <div className='content'>
+            <div className='content p-10'>
                 <div className="flex flex-row">
                     <div className='flex flex-col'>
                         <SidebarLeft/>
