@@ -1,6 +1,13 @@
 @import '../../css/Basic/Basic';
 
 .button {
+    &-white {
+        &::after {
+            background-color: $white;
+            border-color: $black;
+        }
+        &:hover::after { border-color: $black; }
+    }
     &-pink {
         &::after {
             background-color: $pink;
@@ -38,4 +45,17 @@
         }
         &:hover::after { border-color: $black; }
     }
+
+    &-dark {
+        &::before {
+            background-color: $black;
+            border-color: $white;
+        }
+    }
+}
+
+.go-link:after {
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-image: url('../../images/go-link.png');
 }

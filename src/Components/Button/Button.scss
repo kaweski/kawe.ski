@@ -31,8 +31,6 @@
         position: absolute;
         bottom: 0;
         right: 0;
-        border: 1px solid $black;
-        background-color: $white;
         width: 100%;
         height: 100%;
         z-index: 0;
@@ -41,12 +39,10 @@
     &::before {
         content: '';
         display: block;
-        border: 1px solid $black;
         border-radius: $s-2;
         position: absolute;
         bottom: -3px;
         right: -3px;
-        background-color: $white;
         width: 100%;
         height: 100%;
         z-index: -1;
@@ -61,8 +57,6 @@
         }
 
         &::after {
-            background-repeat: no-repeat;
-            background-position: center center;
             height: $s-5;
             width: $s-5;
         }
@@ -72,8 +66,4 @@
             width: $s-5;
         }
     }
-}
-
-.go-link:after {
-    background-image: url('../../images/go-link.png');
 }
