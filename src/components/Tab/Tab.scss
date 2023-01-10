@@ -1,0 +1,39 @@
+@import '../../css/Basic';
+
+.tab {
+    padding: $s-2 $s-4;
+    width: 100%;
+    text-align: center;
+    position: relative;
+    transition: all .9s ease-in-out;
+
+    &.disabled {
+        background-color: $gray;
+        cursor: help;
+
+        &:hover {
+            color: $white;
+        }
+    }
+
+    &:not(.disabled) {
+        background-color: $pink;
+        text-shadow: 1px 1px 0px $white;
+
+        &:after {
+            content: '';
+            display: block;
+            height: 0px;
+            width: 0px;
+            border-left: 8px solid transparent;
+            border-right: 8px solid transparent;
+            border-bottom: 8px solid transparent;
+            border-top: 8px solid $pink;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            margin: auto;
+        }
+    }
+}

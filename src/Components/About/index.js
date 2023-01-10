@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import './About.scss';
 import { Signature } from "../Signature";
 import Tag from "../Tag";
-import Category from "../Category";
+import Tab from "../Tab";
 import Photo from '../../images/photo.png'
 
 class About extends React.Component {
@@ -19,8 +19,12 @@ class About extends React.Component {
                         </div>
                     </div>
                     <div className='flex flex-col'>
-                        <div className='flex'><Category text='About me'/></div>
-                        <div className='flex flex-col p-6'>
+                        <ul className='tabs flex'>
+                            <li className='flex flex-auto justify-center'><Tab text='About me' classes='first'/></li>
+                            <li className='flex flex-auto justify-center'><Tab text='What comes next?' classes='disabled'/></li>
+                            <li className='flex flex-auto justify-center'><Tab text='Han?' classes='disabled last'/></li>
+                        </ul>
+                        <div className='flex flex-col p-8'>
                             <h1 className='white title pb-4'>
                                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi venenatis libero ac ipsum bibendum, ac rutrum neque suscipit. Nunc et rhoncus neque.
                             </h1>

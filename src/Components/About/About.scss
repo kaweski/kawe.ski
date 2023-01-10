@@ -1,1 +1,7 @@
 @import '../../css/Basic';
+
+.tabs {
+    &>div {
+        width: 100%;
+    }
+}

@@ -3,13 +3,14 @@ import "./Main.scss";
 import Link from '../Link';
 import { About } from "../About";
 import { Social } from '../Social';
+import { Logo } from '../Logo';
 
 class Main extends React.Component {
     render() {
         return (
             <main>
                 <header>
-                    <Link url='https://kawe.ski'/>
+                    <Logo/>
                     <hr/>
                 </header>
                 <About/>

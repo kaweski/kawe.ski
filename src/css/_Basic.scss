@@ -4,3 +4,77 @@
 @import './Body.scss';
 @import './Spacings.scss';
 @import './Global.scss';
+
+// @import '../../css/Basic';
+
+// a {
+//     position: relative;
+
+//     &::before {
+//         content: 'hipihipiurrafreaknaakaweskisanaweskil';
+//         font-size: 42px;
+//         font-family: $abuble;
+//         display: block;
+//         position: absolute;
+//         height: 100%;
+//         width: 100%;
+//         left: 0;
+//         top: -10px;
+//         right: 0;
+//         opacity: 0;
+//         color: $white;
+//     }
+
+//     &:not(.button) {
+//         color: $white;
+
+//         &:hover {
+//             text-decoration: none;
+//             cursor: zoom-in;
+//             font-family: $abuble;
+//             color: $black;
+
+//             @-moz-keyframes scroll-left {
+//                 0% {
+//                     -moz-transform: translateX(100%);
+//                 }
+//                 100% {
+//                     -moz-transform: translateX(-100%);
+//                 }
+//             }
+            
+//             @-webkit-keyframes scroll-left {
+//                 0% {
+//                     -webkit-transform: translateX(100%);
+//                 }
+//                 100% {
+//                     -webkit-transform: translateX(-100%);
+//                 }
+//             }
+            
+//             @keyframes scroll-left {
+//                 0% {
+//                     -moz-transform: translateX(100%);
+//                     -webkit-transform: translateX(100%);
+//                     transform: translateX(100%);
+//                 }
+//                 100% {
+//                     -moz-transform: translateX(-100%);
+//                     -webkit-transform: translateX(-100%);
+//                     transform: translateX(-100%);
+//                 }
+//             }
+
+//             &::before {
+//                 opacity: 1;
+//                 left: -100px;
+//                 -moz-transform: translateX(100%);
+//                 -webkit-transform: translateX(100%);
+//                 transform: translateX(100%);
+//                 -moz-animation: scroll-left 2s linear infinite;
+//                 -webkit-animation: scroll-left 2s linear infinite;
+//                 animation: scroll-left 10s linear infinite;
+//             }
+//         }
+//     }
+// }

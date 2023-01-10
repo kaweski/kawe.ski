@@ -1,6 +1,7 @@
 @import '../../css/Basic';
 
 a {
+    position: relative;
     &:not(.button) {
         color: $white;
         &:hover {
