@@ -1,0 +1,12 @@
+@import '../../css/Basic/Basic';
+
+.sidebar {
+
+    &-left {
+        border-right: 1px solid $gray;
+    }
+
+    &-right {
+        border-left: 1px solid $gray;
+    }
+}
