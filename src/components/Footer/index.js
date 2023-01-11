@@ -4,8 +4,8 @@ import './Footer.scss';
 class Footer extends React.Component {
     render() {
         return (
-            <footer className='white flex flex-col items-center'>
-                <p className='abuble abuble-small gray'>Made with <span className='pink'>&lt;3</span> by <span className='arroba'>KAWE.SKI</span></p>
+            <footer className='text-center'>
+                <div className='abuble abuble-small lightgray'>Made with <span className='orange'>&lt;3</span> by <span className='arroba'>kawe.ski</span></div>
             </footer>
         )
     }

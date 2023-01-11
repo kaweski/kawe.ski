@@ -11,7 +11,6 @@ class Main extends React.Component {
             <main>
                 <header>
                     <Logo/>
-                    <hr/>
                 </header>
                 <About/>
                 <Social/>

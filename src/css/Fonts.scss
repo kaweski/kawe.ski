@@ -1,3 +1,5 @@
+@import './Spacings.scss';
+
 @font-face {
     font-family: "Apple ][";
     src: url("../fonts/Apple\ ][.ttf") format("truetype");
@@ -29,7 +31,7 @@ $coding: 'Apple';
 
     &-small {
         font-size: 16px;
-        line-height: 16px;
+        line-height: 13px;
 
         &:hover {
             font-family: $coding;
@@ -41,14 +43,22 @@ $coding: 'Apple';
 
 .text {
     font-family: $coding;
-    font-size: 9px;
-    line-height: 16px;
+    font-size: 8px;
+    line-height: 18px;
     letter-spacing: -1px;
 }
 
 .title {
     font-family: $coding;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 13px;
+    line-height: 32px;
     letter-spacing: -2px;
+}
+
+strong {
+    font-weight: regular;
+    background-color: $orange;
+    color: $black;
+    display: inline-block;
+    padding: 0 $s-2;
 }

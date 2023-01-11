@@ -10,28 +10,29 @@ class Post extends React.Component {
             image : '',
             title: '',
             button: false,
-            content: ''
+            content: '',
+            url: ''
         };
 
-        function hasButton(props) {
-            return props.button
-                ? (<Button url='https://twitter.com/naweskil' icon={true} classes='button-pink button-dark go-link' content={Icon} />)
-                : false
+        function renderButton() {
+            return <Button url={props.url} icon={true} classes='button-white button-dark' content={Icon} />
         }
 
         function hasContent(props) {
             return props.content
-                ? (<div><hr/><p className='text gray'>{props.content}</p></div>)
+                ? (<div className='text lightgray'>{props.content}</div>)
                 : false
         }
 
         return (
             <article className='flex flex-col'>
-                <img src={props.image} className='photo object-cover'/>
-                <div className='flex flex-col'>
-                    <h2 className={`text ${props.color} mt-4`}>{props.title}</h2>
-                    {hasButton(props)}
-                    {hasContent(props)}
+                <img src={props.image} className='photo object-cover rounded-lg mb-4'/>
+                <div className='lg:flex lg:flex-col'>
+                    <h2 className={`text ${props.color} mb-4`}>{props.title}</h2>
+                    <div className='flex flex-row justify-end gap-4'>
+                        <div className='flex flex-col'>{renderButton()}</div>
+                        <div className='flex flex-col'>{hasContent(props)}</div>
+                    </div>
                 </div>
             </article>
         )
