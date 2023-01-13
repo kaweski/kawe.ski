@@ -4,7 +4,7 @@ import './Tag.scss';
 class Tag extends React.Component {
     render() {
         return (
-            <span className='tag text black'>{this.props.text}</span>
+            <span className='tag text'>{this.props.text}</span>
         );
     }
 }

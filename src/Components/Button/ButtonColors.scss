@@ -49,11 +49,42 @@
         }
         &:hover::after { border-color: $black; }
     }
+    &-orange {
+        &::after {
+            background-color: $orange;
+            border: 1px solid $white;
+        }
+        &:hover::after { border-color: $black; }
+    }
 
     &::before { background-color: transparent; }
 
     &-dark {
         &::after { border: 1px solid $black; }
         &::before { border: 1px solid $white; }
+    }
+
+    &-black {
+        text-shadow: 1px 1px 0 $gray;
+        color: $white;
+        &::after {
+            background-color: $black;
+            border: 1px solid $white;
+        }
+        &:hover::after { border-color: $white; }
+    }
+
+    &.disabled {
+        color: $lightgray;
+        padding: 11px 5px 5px 11px;
+        z-index: 0;
+
+        &::before {
+            border-color: $gray;
+        }
+        &::after {
+            border: 1px solid $gray;
+            border-color: $gray;
+        }
     }
 }

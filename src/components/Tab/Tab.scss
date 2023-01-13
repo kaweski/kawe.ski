@@ -1,15 +1,18 @@
 @import '../../css/Basic';
 
 .tab {
-    padding: $s-2 $s-4;
+    padding: $s-5 $s-8 $s-4;
     width: 100%;
     text-align: center;
     position: relative;
-    transition: all .9s ease-in-out;
+    transition: all .2s ease-in-out;
+    border-right: 2px dashed $black;
+    border-radius: 40px 40px 0 0;
 
     &.disabled {
-        background-color: $gray;
+        background-color: $black;
         cursor: help;
+        opacity: 0.3;
 
         &:hover {
             color: $white;
@@ -17,23 +20,23 @@
     }
 
     &:not(.disabled) {
-        background-color: $pink;
-        text-shadow: 1px 1px 0px $white;
+        background-color: $darkgray;
+        border: 2px dashed $darkgray;
 
-        &:after {
-            content: '';
-            display: block;
-            height: 0px;
-            width: 0px;
-            border-left: 8px solid transparent;
-            border-right: 8px solid transparent;
-            border-bottom: 8px solid transparent;
-            border-top: 8px solid $pink;
-            position: absolute;
-            top: 100%;
-            left: 0;
-            right: 0;
-            margin: auto;
-        }
+        // &:after {
+        //     content: '';
+        //     display: block;
+        //     height: 0px;
+        //     width: 0px;
+        //     border-left: 8px solid transparent;
+        //     border-right: 8px solid transparent;
+        //     border-bottom: 8px solid transparent;
+        //     border-top: 8px solid $gray;
+        //     position: absolute;
+        //     top: 100%;
+        //     left: 0;
+        //     right: 0;
+        //     margin: auto;
+        // }
     }
 }

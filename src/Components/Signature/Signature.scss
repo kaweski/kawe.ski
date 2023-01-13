@@ -1,8 +1,6 @@
 @import '../../css/Basic';
 
 .signature {
-    background-color: $green;
-    border-radius: 0 $s-4 $s-4 0;
-    border: none;
-    padding: $s-4 $s-5;
+    background-color: $black;
+    border-top: 1px dashed $darkgray;
 }

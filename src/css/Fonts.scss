@@ -1,16 +1,29 @@
+@import './Spacings.scss';
+
 @font-face {
-    font-family: "Apple ][";
-    src: url("../fonts/Apple\ ][.ttf") format("truetype");
+    // font-family: "Apple ][";
+    // src: url("../fonts/Apple\ ][.ttf") format("truetype");
+    font-family: 'apple_regular';
+    src: url('../fonts/apple_-webfont.woff2') format('woff2'),
+            url('../fonts/apple_-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    
 }
 
 @font-face {
-    font-family: "Redacted Script Regular";
-    src: local("RedactedScript-Regular"),
-        url("../fonts/RedactedScript-Regular.ttf") format("truetype");
+    // font-family: "Redacted Script Regular";
+    // src: local("RedactedScript-Regular"),
+    //     url("../fonts/RedactedScript-Regular.ttf") format("truetype");
+    font-family: 'redacted_scriptregular';
+    src: url('../fonts/redactedscript-regular-webfont.woff2') format('woff2'),
+            url('../fonts/redactedscript-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 }
 
-$abuble: 'Redacted Script Regular';
-$coding: 'Apple';
+$abuble: 'redacted_scriptregular';
+$coding: 'apple_regular';
 
 .abuble {
     font-family: $abuble;
@@ -29,7 +42,7 @@ $coding: 'Apple';
 
     &-small {
         font-size: 16px;
-        line-height: 16px;
+        line-height: 13px;
 
         &:hover {
             font-family: $coding;
@@ -41,14 +54,96 @@ $coding: 'Apple';
 
 .text {
     font-family: $coding;
-    font-size: 9px;
-    line-height: 16px;
+    font-size: 8px;
+    line-height: 18px;
     letter-spacing: -1px;
 }
 
 .title {
     font-family: $coding;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 13px;
+    line-height: 32px;
     letter-spacing: -2px;
+}
+
+strong {
+    font-weight: regular;
+    background-color: $orange;
+    color: $black;
+    display: inline-block;
+    padding: 0 $s-2;
+}
+
+.rainbow {
+    background-color: $black;
+    -webkit-animation:rainbow 1s infinite;
+    -ms-animation:rainbow 1s infinite;
+    -o-animation:rainbow 1s infinite;
+    animation:rainbow 1s infinite;
+}
+
+a {
+    position: relative;
+    &:not(.button) {
+        color: $white;
+        &:hover {
+            text-decoration: none;
+            cursor: pointer;
+            border-bottom: 2px solid $gray;
+            cursor: default;
+        }
+    }
+}
+
+@-webkit-keyframes rainbow {
+    0% {color: #ff0000;}
+    10% {color: #ff8000;}
+    20% {color: #ffff00;}
+    30% {color: #80ff00;}
+    40% {color: #00ff00;}
+    50% {color: #00ff80;}
+    60% {color: #00ffff;}
+    70% {color: #0080ff;}
+    80% {color: #0000ff;}
+    90% {color: #8000ff;}
+    100% {color: #ff0080;}
+}
+@-ms-keyframes rainbow {
+    0% {color: #ff0000;}
+    10% {color: #ff8000;}
+    20% {color: #ffff00;}
+    30% {color: #80ff00;}
+    40% {color: #00ff00;}
+    50% {color: #00ff80;}
+    60% {color: #00ffff;}
+    70% {color: #0080ff;}
+    80% {color: #0000ff;}
+    90% {color: #8000ff;}
+    100% {color: #ff0080;}
+}
+@-o-keyframes rainbow {
+    0% {color: #ff0000;}
+    10% {color: #ff8000;}
+    20% {color: #ffff00;}
+    30% {color: #80ff00;}
+    40% {color: #00ff00;}
+    50% {color: #00ff80;}
+    60% {color: #00ffff;}
+    70% {color: #0080ff;}
+    80% {color: #0000ff;}
+    90% {color: #8000ff;}
+    100% {color: #ff0080;}
+}
+@keyframes rainbow {
+    0% {color: #ff0000;}
+    10% {color: #ff8000;}
+    20% {color: #ffff00;}
+    30% {color: #80ff00;}
+    40% {color: #00ff00;}
+    50% {color: #00ff80;}
+    60% {color: #00ffff;}
+    70% {color: #0080ff;}
+    80% {color: #0000ff;}
+    90% {color: #8000ff;}
+    100% {color: #ff0080;}
 }
