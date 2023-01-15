@@ -87,7 +87,10 @@ class SidebarRight extends React.Component {
                     </div>
                 </div> */}
                 <hr/>
-                <Button url='https://www.paypal.com/donate/?business=7N2KWG5ZVG9YA&no_recurring=0&item_name=Hello%21%0AHelp+buying+me+a+coffee.+%E2%98%95%EF%B8%8F&currency_code=BRL' content='Buy me a coffee' icon={false} classes='button-orange button-dark' />
+                <div className='grid grid-rows-2 gap-4'>
+                    <Button url='https://www.paypal.com/donate/?business=7N2KWG5ZVG9YA&no_recurring=0&item_name=Hello%21%0AHelp+buying+me+a+coffee.+%E2%98%95%EF%B8%8F&currency_code=BRL' content='Buy me a coffee' icon={false} classes='button-orange button-dark' />
+                    <Button url='mailto:nat@kawe.ski' content='Send me a letter' icon={false} classes='button-blue button-dark' />
+                </div>
             </div>
         )
     }
