@@ -1,12 +1,15 @@
 @import '../../css/Basic';
 
+
 .sidebar {
     height: 100%;
-    &-left {
-        border-right: 1px solid $gray;
-    }
-
-    &-right {
-        border-left: 1px solid $gray;
+    @media screen and (min-width: 1024px) {
+        &-left {
+            border-right: 1px solid $gray;
+        }
+    
+        &-right {
+            border-left: 1px solid $gray;
+        }
     }
 }

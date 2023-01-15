@@ -7,7 +7,7 @@ class About extends React.Component {
     render() {
         return (
             <div className='box mt-10'>
-                <div className='flex-col p-10'>
+                <div className='flex-col xlg:p-10 p-4'>
                     <div className='space-x-2 flex items-start'>
                         <Tag text='#frontend'/>
                         <Tag text='#designsystem'/>

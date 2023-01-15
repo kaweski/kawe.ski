@@ -10,7 +10,7 @@ import Photo4 from '../../images/to-concentrate.png';
 class SidebarLeft extends React.Component {
     render() {
         return (
-            <div className='sidebar sidebar-left pr-10'>
+            <div className='sidebar sidebar-left lg:pr-10 md:pr-4'>
                 <div className='p-4 box mb-10'>
                     <Post
                         url='https://medium.com/@kaweski/migra%C3%A7%C3%A3o-de-carreira-como-migrei-de-front-end-para-design-system-acd9292dc3bd'
@@ -34,9 +34,11 @@ class SidebarLeft extends React.Component {
                     />
                 </div>
                 
-                <Button url='https://open.spotify.com/user/hipihipiurra?si=88aaed5c1a2447db' content='Spotify' icon={false} classes='button-black button-dark' />
-                <Button url='https://br.pinterest.com/naweskil' content='Pinterest' icon={false} classes='button-black button-dark' />
-                <Button url='https://twitter.com/naweskil' content='Twitter' icon={false} classes='button-black button-dark' />
+                <div className='grid grid-rows-3 gap-4'>
+                    <Button url='https://open.spotify.com/user/hipihipiurra?si=88aaed5c1a2447db' content='Spotify' icon={false} classes='button-black button-dark' />
+                    <Button url='https://br.pinterest.com/naweskil' content='Pinterest' icon={false} classes='button-black button-dark' />
+                    <Button url='https://twitter.com/naweskil' content='Twitter' icon={false} classes='button-black button-dark' />
+                </div>
             </div>
         )
     }
@@ -45,7 +47,7 @@ class SidebarLeft extends React.Component {
 class SidebarRight extends React.Component {
     render() {
         return (
-            <div className='sidebar sidebar-right pl-10'>
+            <div className='sidebar sidebar-right lg:pl-10 md:pl-4'>
                 {/* <div className='box p-4 mb-10'>
                     <Post
                         title='to cocentrate'
